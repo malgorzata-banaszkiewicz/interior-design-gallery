@@ -1,0 +1,17 @@
+h1 {
+	@include font(14, 17);
+	color: $color-cape-cod;
+	@include media(">=lg") {
+		@include font(24, 29);
+	}
+}
+h2 {
+	color: $color-silver;
+	@include font(12, 15);
+	@include media(">=lg") {
+		@include font(14, 17);
+	}
+	@include media("<xs") {
+		@include font(8, 14);
+	}
+}
